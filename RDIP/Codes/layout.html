@@ -1,23 +1,32 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
 
-    
-<script src = "eleven.js"></script>
-    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <script src="eleven.js"></script>
+
+    <link rel="stylesheet" href="sample.css">
+
+<h1>Experiment</h1>
+
 </head>
 
-<h1>Document</h1>
+
+
 <body>
 
-<center>
+    <p class="c1">
 
-    <p class="class1">
-     
-        <select name="Search4" id='ab' onchange="selectfun()">
-
-            <option value="">--select language--</option> 
+        <select name="Srch" id='chng' onchange="sfun()">
+	    
+            <center><option value="">---select language---</option> </center>
 
             <option value="English">English</option>
 
@@ -27,12 +36,34 @@
 
     </p>
 
-    <p id="id1" style="color:blue;"></p>
+    <p id="id1" class="c1 t1"></p>
 
-    <p id="id2" style="color:blue;"></p>
+    <p id = "id2" class = "c1 t2"></p>
+
     
-    </center>
-    
- 
- </body>
- </html>
+
+    <div id="buton"                class="c1 btn1" hidden></div>
+
+    <div id="sbt"              class="sbtext"></div>
+
+    <div id="enbl"                 class="show"></div>
+
+    <button id="rfrm"             class="rfrmclass" onclick="rfrmsentence()" hidden>Reform the Sentence</button>
+   
+    <button id="crctchk"       class="crctchkclass" onclick="correctness()" hidden>Check the correctness of this sentence</button>
+
+    <div id="right"                 class="right"></div>
+
+    <div id="wrong"                 class="wrong"></div>
+
+    <button id="getcrctsentence"       class="getcrctsentence" onclick="showcrctsentence()" hidden>Get correct sentence</button>
+
+    <button id="showanswer"                 class="getcrctsentence" onclick="showcrctsentence()" hidden>Get Answers</button>
+
+    <button id="closesentence"                class="getcrctsentence" onclick="closesentence()" hidden>Hide the correct sentence</button>
+
+   <div id="lastsentence"                   class="lastclass"></div>
+
+</body>
+
+</html>
